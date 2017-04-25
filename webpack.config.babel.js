@@ -12,7 +12,7 @@ export default {
   output: {
     filename: 'js/bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: isProd ? '/static/' : `http://localhost:${WDS_PORT}/dist/`,
+    publicPath: isProd ? '/static/' : `http://127.0.0.1:${WDS_PORT}/dist/`,
   },
   module: {
     rules: [

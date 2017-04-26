@@ -11,6 +11,9 @@
     "flowtype",
     "compat"
   ],
+  "settings": {
+    "polyfills": ["fetch"]
+  },
   "rules": {
     "no-unexpected-multiline": 2,
     "compat/compat": 2

@@ -19,7 +19,7 @@ const helloReducer = (state: Immut = initialState, action: { type: string, paylo
     case SAY_HELLO:
       return state.set('message', action.payload);
     case SAY_HELLO_ASYNC_REQUEST:
-      return state.set('messageAsync', 'lOADING...');
+      return state.set('messageAsync', 'Loading...');
     case SAY_HELLO_ASYNC_SUCCESS:
       return state.set('messageAsync', action.payload);
     case SAY_HELLO_ASYNC_FAILURE:

@@ -1,4 +1,5 @@
 // @flow
+
 import Immutable from 'immutable';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';

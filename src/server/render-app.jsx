@@ -1,11 +1,11 @@
 // @flow
 
-import { html } from 'common-tags';
 import React from 'react';
-import Helmet from 'react-helmet';
 import ReactDOMServer from 'react-dom/server';
+import Helmet from 'react-helmet';
 import { Provider } from 'react-redux';
 import { StaticRouter } from 'react-router';
+import { html } from 'common-tags';
 
 import initStore from './init-store';
 import App from './../shared/app';
@@ -29,7 +29,7 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
       <head>
         ${head.title}
         ${head.meta}
-        <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
+        <link rel="stylesheet" href="${STATIC_PATH}/css/bootstrap.min.css">
       </head>
       <body>
         <div class="${APP_CONTAINER_CLASS}">${appHtml}</div>
